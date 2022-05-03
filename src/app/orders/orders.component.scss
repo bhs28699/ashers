@@ -1,0 +1,176 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.group {
+  overflow: auto;
+  align-items: stretch;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.image {
+  min-width: 0;
+  min-height: 0;
+  margin: 30px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.group_1 {
+  justify-content: space-between;
+  width: 1507px;
+  height: 948px;
+  padding: 24px;
+  background-color: hsla(var(--igx-secondary-700));
+  overflow: hidden;
+  align-items: stretch;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_2 {
+  width: 1504px;
+  border-width: 10px;
+  justify-content: center;
+  border-color: hsla(var(--igx-secondary-700));
+  border-style: solid;
+  overflow: hidden;
+  align-items: stretch;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_3 {
+  width: 304px;
+  padding: 15px;
+  flex-wrap: wrap;
+  border-color: hsla(var(--igx-secondary-700));
+  border-style: solid;
+  background-color: hsla(var(--igx-primary-100));
+  align-items: stretch;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_4 {
+  width: 1108px;
+  align-items: stretch;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_5 {
+  width: 1104px;
+  align-items: stretch;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_6 {
+  width: 1107px;
+  height: 840px;
+  justify-content: center;
+  overflow: hidden;
+  background-color: hsla(var(--igx-primary-100));
+  min-width: 50px;
+  min-height: 50px;
+}
+.text {
+  color: hsla(var(--igx-secondary-500));
+  min-width: min-content;
+  height: max-content;
+}
+.group_7 {
+  padding: 15px 0 0;
+  background-color: hsla(var(--igx-primary-100));
+  align-items: stretch;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.element {
+  margin: 10px;
+  text-align: center;
+  min-width: min-content;
+  height: max-content;
+}
+.text_1 {
+  margin: 2px;
+  text-align: center;
+  min-width: min-content;
+  height: max-content;
+}
+.app-bar {
+  width: 1457px;
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.button {
+  width: 160px;
+  margin: 0 8px 0 0;
+  color: hsla(var(--igx-surface-500));
+  background-color: hsla(var(--igx-secondary-500));
+  min-width: min-content;
+  height: max-content;
+}
+.button_1 {
+  width: 169px;
+  margin: 0 8px 0 0;
+  color: hsla(var(--igx-surface-500));
+  background-color: hsla(var(--igx-secondary-500));
+  min-width: min-content;
+  height: max-content;
+}
+.button_2 {
+  color: hsla(var(--igx-secondary-600));
+}
+.button_3 {
+  background-color: hsla(var(--igx-secondary-600));
+  position: relative;
+  margin: 10px;
+  min-width: min-content;
+  height: max-content;
+}
+.switch {
+  margin: 15px;
+  width: max-content;
+  height: max-content;
+}
+.date-picker {
+  min-width: 120px;
+  margin: 10px;
+  height: max-content;
+}
+.button_4 {
+  flex-shrink: 0;
+  width: 178px;
+  margin: 0 8px 0 0;
+  color: hsla(var(--igx-surface-500));
+  background-color: hsla(var(--igx-secondary-500));
+  min-width: min-content;
+  height: max-content;
+}
+.button_5 {
+  width: 178px;
+  margin: 0 8px 0 0;
+  color: hsla(var(--igx-surface-500));
+  background-color: hsla(var(--igx-secondary-500));
+  min-width: min-content;
+  height: max-content;
+}
+.grid {
+  margin: 10px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.row-layout {
+  display: flex;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,97 @@
+<div class="group_6 column-layout">
+  <div class="group_2 row-layout">
+    <igx-navbar class="app-bar">
+      <igx-navbar-title>
+        <button igxButton="flat" igxRipple routerLink="/sales-orders" class="button_2">
+          <igx-icon>
+            shopping_cart
+          </igx-icon>
+          <span>Sales Orders</span>
+        </button>
+        <button igxButton="flat" igxRipple routerLink="/shipments" class="button_3">
+          <igx-icon>
+            local_shipping
+          </igx-icon>
+          <span>Shipments</span>
+        </button>
+        <button igxButton="flat" igxRipple routerLink="/product" class="button_4">
+          <igx-icon>
+            spa
+          </igx-icon>
+          <span>Products</span>
+        </button>
+      </igx-navbar-title>
+      <ng-container>
+        <button igxButton="icon" igxRipple class="button_5">
+          <igx-icon>
+            person
+          </igx-icon>
+        </button>
+        <p routerLink="/landing" class="text_2">
+          Home...
+        </p>
+      </ng-container>
+    </igx-navbar>
+  </div>
+</div>
+<div class="group_3 row-layout">
+  <div class="group column-layout">
+    <h6 class="h6">
+      Search Criteria
+    </h6>
+    <p class="igx-typography__caption text">
+      Start Date:
+    </p>
+    <igx-date-picker type="border" mode="dialog" class="date-picker">
+      <label igxLabel>Date</label>
+    </igx-date-picker>
+    <p class="igx-typography__caption text_1">
+      End Date:
+    </p>
+    <igx-date-picker type="border" mode="dialog" class="date-picker_1">
+      <label igxLabel>Date</label>
+    </igx-date-picker>
+    <igx-input-group type="box" class="igx-typography__body-1 textarea">
+      <label igxLabel>Order Search:</label>
+      <textarea placeholder="Enter Order Number..." igxInput></textarea>
+    </igx-input-group>
+    <igx-input-group type="box" class="igx-typography__body-1 textarea_1">
+      <label igxLabel>Tracking Number:</label>
+      <textarea placeholder="Enter Tracking Information..." igxInput></textarea>
+    </igx-input-group>
+    <button igxButton="raised" igxRipple class="button_6">
+      Search
+    </button>
+    <img src="/assets/Ashers-Chocolate-Co-log_web.jpg" class="image" />
+  </div>
+  <div class="group_4 column-layout">
+    <div class="group_6 column-layout">
+      <div class="group_5 column-layout">
+        <igx-grid [data]="orderHeadersCleanFinalTable1" primaryKey="ORDER NUMBER" displayDensity="cosy" rowSelection="multiple" [moving]="true" width="1076px" height="684px" class="grid">
+          <igx-column header="ORDER NUMBER" field="ORDER NUMBER" dataType="string" [sortable]="true" [resizable]="true" title="ORDER NUMBER"></igx-column>
+          <igx-column header="CREDIT TERMS" field="CREDIT TERMS" dataType="string" [sortable]="true" [resizable]="true" title="CREDIT TERMS"></igx-column>
+          <igx-column header="CUST REF" field="CUST REF" dataType="string" [sortable]="true" [resizable]="true" title="CUST REF"></igx-column>
+          <igx-column header="ORDER DISCOUNT" field="ORDER DISCOUNT" dataType="string" [sortable]="true" [resizable]="true" title="ORDER DISCOUNT"></igx-column>
+          <igx-column header="WEIGHT" field="WEIGHT" dataType="string" [sortable]="true" [resizable]="true" title="WEIGHT"></igx-column>
+          <igx-column header="UOM" field="UOM" dataType="string" [sortable]="true" [resizable]="true" title="UOM"></igx-column>
+          <igx-column header="DATE" field="DATE" dataType="string" [sortable]="true" [resizable]="true" title="DATE"></igx-column>
+          <igx-column header="ORDER TOTAL" field="ORDER TOTAL" dataType="string" [sortable]="true" [resizable]="true" title="ORDER TOTAL"></igx-column>
+        </igx-grid>
+        <div class="group_1 row-layout">
+          <button igxButton="flat" igxRipple routerLink="/order-pdf" class="button">
+            <igx-icon>
+              local_printshop
+            </igx-icon>
+            <span>Order</span>
+          </button>
+          <button igxButton="flat" igxRipple routerLink="/invoice-pdf" class="button_1">
+            <igx-icon>
+              print
+            </igx-icon>
+            <span>Invoice</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

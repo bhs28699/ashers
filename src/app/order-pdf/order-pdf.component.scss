@@ -1,0 +1,29 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+.navbar {
+  height: max-content;
+  min-width: min-content;
+}
+.group {
+  align-items: stretch;
+  position: relative;
+  width: 1422px;
+  min-width: 50px;
+  min-height: 50px;
+}
+.image {
+  width: 1237px;
+  min-width: 0;
+  min-height: 0;
+  margin: 5px;
+  object-fit: scale-down;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}

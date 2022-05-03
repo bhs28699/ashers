@@ -1,0 +1,99 @@
+<div class="group column-layout">
+  <div class="group_2 row-layout">
+    <igx-navbar class="app-bar">
+      <igx-navbar-title>
+        <button igxButton="flat" igxRipple routerLink="/orders" class="button_5">
+          <igx-icon>
+            shopping_cart
+          </igx-icon>
+          <span>Sales Orders</span>
+        </button>
+        <button igxButton="flat" igxRipple routerLink="/shipments" class="button">
+          <igx-icon>
+            local_shipping
+          </igx-icon>
+          <span>Shipments</span>
+        </button>
+        <button igxButton="flat" igxRipple class="button_1">
+          <igx-icon>
+            spa
+          </igx-icon>
+          <span>Products</span>
+        </button>
+      </igx-navbar-title>
+      <ng-container>
+        <p routerLink="/landing" class="text">
+          Home...
+        </p>
+        <button igxButton="icon" igxRipple class="button_2">
+          <igx-icon>
+            person
+          </igx-icon>
+        </button>
+      </ng-container>
+    </igx-navbar>
+  </div>
+</div>
+<div class="group_1 row-layout">
+  <div class="group_3 column-layout">
+    <h6 class="element">
+      Search Criteria
+    </h6>
+    <p class="igx-typography__caption text_1">
+      Start Date:
+    </p>
+    <igx-date-picker type="border" todayButtonLabel="Today" cancelButtonLabel="Cancel" mode="dialog" class="date-picker">
+      <label igxLabel>Date</label>
+    </igx-date-picker>
+    <p class="igx-typography__caption text_1">
+      End Date:
+    </p>
+    <igx-date-picker type="border" mode="dialog" class="date-picker">
+      <label igxLabel>Date</label>
+    </igx-date-picker>
+    <igx-switch class="switch">
+      Show Open Orders Only
+    </igx-switch>
+    <igx-switch class="switch">
+      Orders That Have Shipped
+    </igx-switch>
+    <igx-input-group type="box" class="igx-typography__body-1 element">
+      <label igxLabel>Order Search:</label>
+      <textarea placeholder="Order Number..." igxInput></textarea>
+    </igx-input-group>
+    <button igxButton="raised" igxRipple class="button_3">
+      Search
+    </button>
+    <img src="/assets/Ashers-Chocolate-Co-log_web.jpg" class="image" />
+  </div>
+  <div class="group_4 column-layout">
+    <div class="group_5 column-layout">
+      <div class="group_6 column-layout">
+        <igx-grid [data]="orderHeadersNewTable1" primaryKey="ORDER_NUMBER" displayDensity="cosy" [moving]="true" width="1091px" height="689px" routerLink="/order-pdf" class="grid">
+          <igx-column header="ORDER_NUMBER" field="ORDER_NUMBER" dataType="string" [sortable]="true" [groupable]="true" title="ORDER_NUMBER"></igx-column>
+          <igx-column header="ORDER_DATE" field="ORDER_DATE" dataType="string" [sortable]="true" [groupable]="true" title="ORDER_DATE"></igx-column>
+          <igx-column header="CREDIT_TERMS_CODE" field="CREDIT_TERMS_CODE" dataType="string" [sortable]="true" [groupable]="true" title="CREDIT_TERMS_CODE"></igx-column>
+          <igx-column header="CUSTOMER_REFERENCE" field="CUSTOMER_REFERENCE" dataType="string" [sortable]="true" [groupable]="true" title="CUSTOMER_REFERENCE"></igx-column>
+          <igx-column header="ORDER_DISCOUNT" field="ORDER_DISCOUNT" dataType="string" [sortable]="true" [groupable]="true" title="ORDER_DISCOUNT"></igx-column>
+          <igx-column header="FREIGHT" field="FREIGHT" dataType="string" [sortable]="true" [groupable]="true" title="FREIGHT"></igx-column>
+          <igx-column header="WEIGHT" field="WEIGHT" dataType="string" [sortable]="true" [groupable]="true" title="WEIGHT"></igx-column>
+          <igx-column header="SOP_ORDER_TOTAL_CURRENCY" field="SOP_ORDER_TOTAL_CURRENCY" dataType="string" [sortable]="true" [groupable]="true" title="SOP_ORDER_TOTAL_CURRENCY"></igx-column>
+        </igx-grid>
+        <div class="group_7 row-layout">
+          <button igxButton="flat" igxRipple routerLink="/order-pdf" class="button_4">
+            <igx-icon>
+              shopping_cart
+            </igx-icon>
+            <span>Sales Order</span>
+          </button>
+          <button igxButton="flat" igxRipple routerLink="/invoice-pdf" class="button_4">
+            <igx-icon>
+              shopping_cart
+            </igx-icon>
+            <span>Invoice</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

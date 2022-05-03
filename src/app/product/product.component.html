@@ -1,0 +1,110 @@
+<div class="group_6 column-layout">
+  <div class="group_1 row-layout">
+    <igx-navbar class="app-bar">
+      <igx-navbar-title>
+        <button igxButton="flat" igxRipple routerLink="/sales-orders" class="button_1">
+          <igx-icon>
+            shopping_cart
+          </igx-icon>
+          <span>Sales Orders</span>
+        </button>
+        <button igxButton="flat" igxRipple routerLink="/shipments" class="button_2">
+          <igx-icon>
+            local_shipping
+          </igx-icon>
+          <span>Shipments</span>
+        </button>
+        <button igxButton="flat" igxRipple routerLink="/product" class="button_3">
+          <igx-icon>
+            spa
+          </igx-icon>
+          <span>Products</span>
+        </button>
+      </igx-navbar-title>
+      <ng-container>
+        <button igxButton="icon" igxRipple class="button_4">
+          <igx-icon>
+            person
+          </igx-icon>
+        </button>
+        <p routerLink="/landing" class="text">
+          Home...
+        </p>
+      </ng-container>
+    </igx-navbar>
+  </div>
+</div>
+<div class="group_2 row-layout">
+  <div class="group column-layout">
+    <h6 class="h6">
+      Search Criteria
+    </h6>
+    <igx-input-group type="box" class="igx-typography__body-1 textarea">
+      <label igxLabel>Product</label>
+      <textarea placeholder="Enter Description..." igxInput></textarea>
+    </igx-input-group>
+    <button igxButton="raised" igxRipple class="button">
+      Search
+    </button>
+    <img src="/assets/Ashers-Chocolate-Co-log_web.jpg" class="image" />
+  </div>
+  <div class="group_4 column-layout">
+    <div class="group_6 column-layout">
+      <div class="group_5 column-layout">
+        <div class="group_3 column-layout">
+          <igx-list class="list">
+            <igx-list-item [isHeader]="false" class="list-item">
+              <span igxListThumbnail>
+                <igx-avatar src="/assets/IMG_1664-205x205.png" size="large" class="avatar"></igx-avatar>
+              </span>
+              <span igxListLineTitle>Milk Chocolate Cordial Cherries</span>
+              <span igxListLineSubTitle>1lb. Box - 16.95</span>
+            </igx-list-item>
+            <igx-list-item [isHeader]="false" class="list-item">
+              <span igxListThumbnail>
+                <igx-avatar src="/assets/IMG_1618-205x205.png" size="large" class="avatar"></igx-avatar>
+              </span>
+              <span igxListLineTitle>Milk Chocolate Almond Bark</span>
+              <span igxListLineSubTitle>1Lb. Box - 16.95</span>
+            </igx-list-item>
+            <igx-list-item [isHeader]="false" class="list-item">
+              <span igxListThumbnail>
+                <igx-avatar src="/assets/almond_bark.jpg" size="large" class="avatar"></igx-avatar>
+              </span>
+              <span igxListLineTitle>Milk Chocolate Almond Bark</span>
+              <span igxListLineSubTitle>4oz Bag - 4.95</span>
+            </igx-list-item>
+            <igx-list-item [isHeader]="false" class="list-item">
+              <span igxListThumbnail>
+                <igx-avatar src="/assets/IMG_1618-205x205.png" size="large" class="avatar"></igx-avatar>
+              </span>
+              <span igxListLineTitle>Milk Chocolate Cashew Caramel Patties</span>
+              <span igxListLineSubTitle>1lb. Box - 16.95</span>
+            </igx-list-item>
+            <igx-list-item [isHeader]="false" class="list-item">
+              <span igxListThumbnail>
+                <igx-avatar src="/assets/toffee-crunch_1_1-205x205.jpg" size="large" class="avatar"></igx-avatar>
+              </span>
+              <span igxListLineTitle>Almond Buttercrunch</span>
+              <span igxListLineSubTitle>4oz. Bag - 4.95</span>
+            </igx-list-item>
+            <igx-list-item [isHeader]="false" class="list-item">
+              <span igxListThumbnail>
+                <igx-avatar src="/assets/toffee-crunch_1_1-205x205.jpg" size="large" class="avatar"></igx-avatar>
+              </span>
+              <span igxListLineTitle>Almond Buttercrunch</span>
+              <span igxListLineSubTitle>4oz. Bag - 4.95</span>
+            </igx-list-item>
+            <igx-list-item [isHeader]="false" class="list-item">
+              <span igxListThumbnail>
+                <igx-avatar src="/assets/Beauty-Basket-3-205x205.png" size="large" class="avatar"></igx-avatar>
+              </span>
+              <span igxListLineTitle>The Total Package Gift Basket</span>
+              <span igxListLineSubTitle>1 Gift Basket  - 204.95</span>
+            </igx-list-item>
+          </igx-list>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
