@@ -50,6 +50,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'AshersCustomerPortal'
-          slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_81F41D8D28A6480990B3B5EC5E133A9D }}
-          package: .
+          package: /dist/ashers-customer-portal-app
